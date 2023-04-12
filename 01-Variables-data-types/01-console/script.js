@@ -1,125 +1,160 @@
-// // let firstName = "Saurav";
-// let lastName = "Verma";
+// // // let firstName = "Saurav";
+// // let lastName = "Verma";
 
-// console.log(
-//   "Your Name is",
-//   firstName + " " + lastName + "and your age is",
-//   age
-// );
+// // console.log(
+// //   "Your Name is",
+// //   firstName + " " + lastName + "and your age is",
+// //   age
+// // );
 
-// var age = 25;
+// // var age = 25;
 
-// console.log("and your age is", age);
+// // console.log("and your age is", age);
 
-// Data Types
+// // Data Types
 
-//  01 - PRIMITIVE DATA TYPES
+// //  01 - PRIMITIVE DATA TYPES
 
-/*
-  -- String
-  -- Number
-  -- Boolean
-  -- Null 
-  -- Undefined 
-  -- Symbol
-  -- BigInt
-*/
+// /*
+//   -- String
+//   -- Number
+//   -- Boolean
+//   -- Null
+//   -- Undefined
+//   -- Symbol
+//   -- BigInt
+// */
 
-// 02 - REFERENCE TYPES
-/*
-    OBJECTS 
-    ARRAYS 
-*/
+// // 02 - REFERENCE TYPES
+// /*
+//     OBJECTS
+//     ARRAYS
+// */
 
-//  String
+// //  String
 
-const firstName = "Sarah";
+// const firstName = "Sarah";
 
-const age = 24;
-const temp = 98.8;
-const aptNumber = null;
-const hasKids = true;
+// const age = 24;
+// const temp = 98.8;
+// const aptNumber = null;
+// const hasKids = true;
 
-const output = hasKids;
-console.log(output, typeof output);
+// const output = hasKids;
+// console.log(output, typeof output);
 
-// Primitive vs reference types
+// // Primitive vs reference types
 
-let yourName = "Saurav verma";
-let youAge = 24;
+// let yourName = "Saurav verma";
+// let youAge = 24;
 
-let newName = yourName;
+// let newName = yourName;
 
-newName = "John Abraham";
+// newName = "John Abraham";
 
-console.log(yourName, newName);
+// console.log(yourName, newName);
 
-// Reference Type
+// // Reference Type
 
-const newHero = {
-  hisName: "Saurav Verma",
-  hisAge: 24,
-};
+// const newHero = {
+//   hisName: "Saurav Verma",
+//   hisAge: 24,
+// };
 
-const newerHero = newHero;
-newerHero.hisName = "Shah Rukh Khan";
+// const newerHero = newHero;
+// newerHero.hisName = "Shah Rukh Khan";
 
-console.log(newHero.hisName, newerHero.hisName);
+// console.log(newHero.hisName, newerHero.hisName);
 
-// Type Conversion
+// // Type Conversion
 
-// Change String to Number
+// // Change String to Number
 
-let amount = 0;
-// amount = Number(amount);
-// amount = +amount;
-// amount = parseInt(amount);
-// amount = parseFloat(amount);
+// let amount = 0;
+// // amount = Number(amount);
+// // amount = +amount;
+// // amount = parseInt(amount);
+// // amount = parseFloat(amount);
 
-// Change Number to String
+// // Change Number to String
 
-// amount = amount.toString();
-// amount = String(amount);
+// // amount = amount.toString();
+// // amount = String(amount);
 
-// Convert Number to Boolean
+// // Convert Number to Boolean
 
-amount = Boolean(amount);
+// amount = Boolean(amount);
 
-console.log(amount, typeof amount);
+// console.log(amount, typeof amount);
 
-// Operators
+// // Operators
 
-// Arithmetic Operators
+// // Arithmetic Operators
 
-// String Properties and Methods
+// // String Properties and Methods
 
-const s = "Hello, My People.";
+// const s = "Hello, My People.";
 
-x = s.length;
-x = s[1];
-console.log(x);
+// x = s.length;
+// x = s[1];
+// console.log(x);
 
-// Capitalize Challenge
+// // Capitalize Challenge
 
-const myString = "my Name";
+// const myString = "my Name";
 
-const newString = myString[0].toUpperCase() + myString.slice(1).toLowerCase();
+// const newString = myString[0].toUpperCase() + myString.slice(1).toLowerCase();
 
-console.log(newString);
+// console.log(newString);
 
-// Number CHallenge
+// // Number CHallenge
 
-const xm = Math.floor(Math.random() * 100 + 1);
-const ym = Math.floor(Math.random() * 50 + 1);
+// const xm = Math.floor(Math.random() * 100 + 1);
+// const ym = Math.floor(Math.random() * 50 + 1);
 
-const sumOutput = `${xm} + ${ym}  = ${xm + ym}`;
-const diffOutput = `${xm} - ${ym}  = ${xm - ym}`;
-const productOutput = `${xm} * ${ym}  = ${xm * ym}`;
-const divisionOutput = `${xm} / ${ym}  = ${xm / ym}`;
-const remainderOutput = `${xm} % ${ym}  = ${xm % ym}`;
+// const sumOutput = `${xm} + ${ym}  = ${xm + ym}`;
+// const diffOutput = `${xm} - ${ym}  = ${xm - ym}`;
+// const productOutput = `${xm} * ${ym}  = ${xm * ym}`;
+// const divisionOutput = `${xm} / ${ym}  = ${xm / ym}`;
+// const remainderOutput = `${xm} % ${ym}  = ${xm % ym}`;
 
-console.log(sumOutput);
-console.log(diffOutput);
-console.log(productOutput);
-console.log(divisionOutput);
-console.log(remainderOutput);
+// console.log(sumOutput);
+// console.log(diffOutput);
+// console.log(productOutput);
+// console.log(divisionOutput);
+// console.log(remainderOutput);
+
+// //
+
+// let d;
+
+// d = new Date();
+// console.log(d, typeof d);
+// console.log(d.toString());
+
+// e = new Date("2021-07-10T12:30:00");
+// console.log(e);
+
+// f = Date.now();
+// console.log(f);
+
+let dd = new Date("2022/05/15");
+
+console.log(dd);
+console.log(dd.toString());
+console.log(dd.getTime());
+console.log(dd.valueOf());
+
+console.log(dd.getFullYear());
+console.log(dd.getMonth() + 1);
+console.log(dd.getDate());
+console.log(dd.getDay());
+console.log(dd.getHours());
+console.log(dd.getMinutes());
+
+console.log(`${dd.getFullYear()}-${dd.getMonth() + 1}-${dd.getDate()}`);
+
+// let xx = Intl.DateTimeFormat("default", { month: "long" }).format(dd);
+
+console.log(dd.toLocaleString("default"));
+// console.log(xx);
