@@ -65,3 +65,61 @@ const newerHero = newHero;
 newerHero.hisName = "Shah Rukh Khan";
 
 console.log(newHero.hisName, newerHero.hisName);
+
+// Type Conversion
+
+// Change String to Number
+
+let amount = 0;
+// amount = Number(amount);
+// amount = +amount;
+// amount = parseInt(amount);
+// amount = parseFloat(amount);
+
+// Change Number to String
+
+// amount = amount.toString();
+// amount = String(amount);
+
+// Convert Number to Boolean
+
+amount = Boolean(amount);
+
+console.log(amount, typeof amount);
+
+// Operators
+
+// Arithmetic Operators
+
+// String Properties and Methods
+
+const s = "Hello, My People.";
+
+x = s.length;
+x = s[1];
+console.log(x);
+
+// Capitalize Challenge
+
+const myString = "my Name";
+
+const newString = myString[0].toUpperCase() + myString.slice(1).toLowerCase();
+
+console.log(newString);
+
+// Number CHallenge
+
+const xm = Math.floor(Math.random() * 100 + 1);
+const ym = Math.floor(Math.random() * 50 + 1);
+
+const sumOutput = `${xm} + ${ym}  = ${xm + ym}`;
+const diffOutput = `${xm} - ${ym}  = ${xm - ym}`;
+const productOutput = `${xm} * ${ym}  = ${xm * ym}`;
+const divisionOutput = `${xm} / ${ym}  = ${xm / ym}`;
+const remainderOutput = `${xm} % ${ym}  = ${xm % ym}`;
+
+console.log(sumOutput);
+console.log(diffOutput);
+console.log(productOutput);
+console.log(divisionOutput);
+console.log(remainderOutput);
