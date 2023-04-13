@@ -1,109 +1,196 @@
-// // Array Literal
+// // // // Array Literal
 
-// const numbers = [12, 45, 36, 74, 15, 59];
+// // // const numbers = [12, 45, 36, 74, 15, 59];
 
-// // console.log(numbers);
+// // // // console.log(numbers);
 
-// // Array Constructor
+// // // // Array Constructor
 
-// const fruits = new Array("apple", "grape", "orange", "banana");
+// // // const fruits = new Array("apple", "grape", "orange", "banana");
 
-// const mixed = [12, "Hello", 45, true, "World"];
+// // // const mixed = [12, "Hello", 45, true, "World"];
 
-// // console.log(fruits);
+// // // // console.log(fruits);
 
-// let x = numbers[0] + numbers[4];
+// // // let x = numbers[0] + numbers[4];
 
-// // console.log(mixed.length);
+// // // // console.log(mixed.length);
+
+// // // // console.log(x);
+// // // // console.log(mixed);
+
+// // // fruits[2] = "watermelon";
+// // // fruits[fruits.length] = "Mango";
+// // // fruits[fruits.length] = "Blueberry";
+// // // // console.log(fruits.length);
+// // // // console.log(fruits);
+
+// // // // Array Methods
+
+// // // console.log(numbers);
+// // // numbers.push(99);
+// // // numbers.unshift(02);
+// // // numbers.reverse();
+// // // numbers.pop();
+// // // numbers.shift();
+
+// // // x = numbers.includes(15);
+// // // console.log(numbers);
+
+// // // console.log(numbers.indexOf(306));
+
+// // // // Slice and Splice
+
+// // // x = numbers.slice(1, 4);
+// // // // x = numbers.splice(1, 4);
+
+// // // console.log(numbers);
+
+// // // x = console.log(x);
+
+// // // Nesting Concatenating and Spread Operator
+
+// // const fruits = new Array("apple", "grape", "orange", "banana");
+// // const berries = [
+// //   "strawberry",
+// //   "raspberry",
+// //   "blueberry",
+// //   "blackberry",
+// //   "mullberry",
+// // ];
+
+// // // fruits.push(berries);
+
+// // console.log(...fruits);
+// // // console.log(fruits[4][3]);
+
+// // // const allFruits = fruits.concat(berries);
+
+// // // SPREAD OPERATOR
+
+// // const allFruits = [...fruits, ...berries];
+
+// // // FLATTEN ARRAYS
+// // const arr = [1, 2, 3, [4, 5, 6], [5, 6], 7, 8, [9]];
+
+// // console.log(arr.flat());
+
+// // console.log(allFruits);
+
+// // // Static Methods on Array Object
+
+// // x = Array.isArray("fruits");
+// // x = Array.from("123456", Number);
+
+// // const a = 45;
+// // const b = 55;
+// // const c = 65;
+// // const d = 85;
+
+// // x = Array.of(a, b, c, d);
 
 // // console.log(x);
-// // console.log(mixed);
 
-// fruits[2] = "watermelon";
-// fruits[fruits.length] = "Mango";
-// fruits[fruits.length] = "Blueberry";
-// // console.log(fruits.length);
-// // console.log(fruits);
+// // // Array Challenges
 
-// // Array Methods
+// // const arr1 = [1, 2, 3, 4, 5];
+// // arr1.unshift(0);
+// // console.log(arr1);
+// // arr1.push(6);
+// // console.log(arr1);
+// // arr1.reverse();
+// // console.log(arr1);
 
-// console.log(numbers);
-// numbers.push(99);
-// numbers.unshift(02);
-// numbers.reverse();
-// numbers.pop();
-// numbers.shift();
+// // const arr2 = [1, 2, 3, 4, 5];
+// // const arr3 = [5, 6, 7, 8, 9, 10];
 
-// x = numbers.includes(15);
-// console.log(numbers);
+// // const arr4 = [...arr2, ...arr3];
+// // arr4.splice(4, 1);
+// // console.log(arr4);
 
-// console.log(numbers.indexOf(306));
+// // OBJECTS
 
-// // Slice and Splice
+// const person = {
+//   name: "Jason Momoa",
+//   age: 30,
+//   isAdmin: true,
+//   address: {
+//     street: "123 main st",
+//     city: "Boston",
+//     state: "MA",
+//   },
+//   hobbies: ["music", "sports"],
+// };
 
-// x = numbers.slice(1, 4);
-// // x = numbers.splice(1, 4);
+// console.log(person.hobbies[1]);
 
-// console.log(numbers);
+// person.name = "Henry Cavil";
 
-// x = console.log(x);
+// person.hasChildren = true;
+// person.greet = function () {
+//   console.log(`Hello My Name is ${this.name}`);
+// };
 
-// Nesting Concatenating and Spread Operator
+// console.log(person);
+// person.greet();
 
-const fruits = new Array("apple", "grape", "orange", "banana");
-const berries = [
-  "strawberry",
-  "raspberry",
-  "blueberry",
-  "blackberry",
-  "mullberry",
+// // Object Methods
+
+// const todo = new Object();
+// todo.name = "Buy Milk";
+// todo.completed = false;
+
+// console.log(todo);
+
+// // Destructuring & Namming
+
+// const firstName = "Jason";
+// const lastName = "Momoa";
+// const age = 38;
+
+// const superStar = {
+//   firstName,
+//   lastName,
+//   age,
+// };
+
+// console.log(superStar);
+
+const library = [
+  {
+    title: "Harry Potter",
+    author: "J.K Rowlings",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: "Jungle Book",
+    author: "Rudyard Kipling",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: "Snow White",
+    author: "James Finn Garner",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
 ];
 
-// fruits.push(berries);
+library[0].status.reading = true;
+library[1].status.reading = true;
+library[2].status.reading = true;
 
-console.log(...fruits);
-// console.log(fruits[4][3]);
+console.log(library[0]);
 
-// const allFruits = fruits.concat(berries);
-
-// SPREAD OPERATOR
-
-const allFruits = [...fruits, ...berries];
-
-// FLATTEN ARRAYS
-const arr = [1, 2, 3, [4, 5, 6], [5, 6], 7, 8, [9]];
-
-console.log(arr.flat());
-
-console.log(allFruits);
-
-// Static Methods on Array Object
-
-x = Array.isArray("fruits");
-x = Array.from("123456", Number);
-
-const a = 45;
-const b = 55;
-const c = 65;
-const d = 85;
-
-x = Array.of(a, b, c, d);
-
-console.log(x);
-
-// Array Challenges
-
-const arr1 = [1, 2, 3, 4, 5];
-arr1.unshift(0);
-console.log(arr1);
-arr1.push(6);
-console.log(arr1);
-arr1.reverse();
-console.log(arr1);
-
-const arr2 = [1, 2, 3, 4, 5];
-const arr3 = [5, 6, 7, 8, 9, 10];
-
-const arr4 = [...arr2, ...arr3];
-arr4.splice(4, 1);
-console.log(arr4);
+const { title: firstBook } = library[0];
+console.log(firstBook);
