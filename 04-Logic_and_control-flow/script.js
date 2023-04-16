@@ -39,28 +39,31 @@
 //     console.log("It is Not Jan, Feb or March");
 // }
 
-// const calculator = (num1, num2, operator) => {
-//   let result = 0;
-//   switch (operator) {
-//     case "+":
-//       result = num1 + num2;
-//       break;
-//     case "-":
-//       result = num1 - num2;
-//       break;
-//     case "*":
-//       result = num1 * num2;
-//       break;
-//     case "/":
-//       result = num1 / num2;
-//       break;
-//     case "%":
-//       result = num1 % num2;
-//     default:
-//       result = "This is an Invalid Operator";
-//   }
-// };
-
+const calculator = (num1, num2, operator) => {
+  let result = 0;
+  switch (operator) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    case "%":
+      result = num1 % num2;
+      break;
+    default:
+      result = "This is an Invalid Operator";
+  }
+  return result;
+};
+console.log("///");
+console.log(calculator(8, 3, "%"));
 function timeToMixJuice(name) {
   switch (name) {
     case "Pure Strawberry Joy":
@@ -124,3 +127,43 @@ const orders = [
   "Pure Strawberry Joy",
 ];
 console.log(remainingOrders(7, orders));
+
+console.log("Truthy and Falsy Value");
+
+// Falsy Values
+
+// - false
+// - 0
+// - ""
+// - null
+// - undefined
+// - NaN
+
+let a = null;
+
+// if (!a) {
+//   a = 20;
+// }
+
+// a = a || 30;
+
+// a ||= 40;
+// console.log(a);
+
+// let b = 6;
+// b &&= 560;
+
+// // console.log(b);
+
+// let c = 0;
+
+// // if (c === null || c === undefined) {
+// //   c = 70;
+// // }
+
+// c ??= 50312;
+// console.log(c);
+
+const age = 18;
+
+age >= 18 ? console.log("You can Vote") : console.log("You can not vote");
